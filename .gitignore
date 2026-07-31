@@ -1,0 +1,5 @@
+# Higgsfield companion skills (environment setup, not project code)
+# Reinstall anytime with: npx skills add higgsfield-ai/skills
+.agents/
+.claude/skills/higgsfield-*
+skills-lock.json
