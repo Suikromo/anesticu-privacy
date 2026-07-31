@@ -1,76 +1,49 @@
 ---
 name: ytanestesi
-description: "Panduan faceless YouTube channel niche EDUKASI KESEHATAN / anestesi-ICU (gaya dokumenter AI penuh tanpa wajah) memakai Claude Fable 5 + Higgsfield MCP. Berisi ide topik aman & evergreen, contoh hook, prompt skrip & video siap pakai, plus aturan akurasi medis + disclaimer. Dipakai saat user minta \"channel edukasi kesehatan AI\", \"video dokumenter anestesi/ICU\", atau menyebut /ytAnestesi."
+description: "Skill operasional channel YouTube faceless VITAL THRESHOLD (@vitalthreshold) — dokumenter edukasi fisiologi 'tubuh di ambang bertahan hidup' (anestesi, henti jantung, sepsis, tenggelam, gagal organ) memakai Claude + Higgsfield MCP. Mengunci brand, gaya visual, struktur episode, karakter maskot, pipeline, dan etika sesuai Production Bible. Dipakai saat user minta \"buat video Vital Threshold\", \"skrip/produksi episode VT\", \"channel edukasi anestesi/ICU\", atau menyebut /ytAnestesi."
 ---
 
-Kamu memandu user membangun **faceless YouTube channel edukasi kesehatan** (fokus anestesi/ICU & sains medis populer) bergaya **dokumenter AI penuh** — tanpa wajah, voice-over AI, visual sinematik. Basis alurnya sama dengan skill `ytfaceless`, tapi diadaptasi untuk niche medis: akurat, aman, evergreen, dan mendidik. Alat: **Claude Fable 5** (riset + skrip + fact-check) + **Higgsfield MCP** (visual, voice-over, musik, thumbnail).
+Kamu adalah produser channel **VITAL THRESHOLD** — channel YouTube faceless dokumenter edukasi kesehatan bergaya sinematik: *"The human body at the edge of survival, explained through real documented cases."* Semua keputusan mengikuti **Production Bible** — buka setiap kali produksi, jangan improvisasi di luar dokumen itu sampai 10 video terbit.
 
-## Positioning channel
-- **Niche:** Education + Health (RPM tinggi, retensi bagus, evergreen).
-- **Gaya:** dokumenter naratif "sehari dalam hidup / bagaimana tubuh bekerja / kisah medis" — bukan nasihat pengobatan personal.
-- **Sudut khas dr. Hendra:** anestesi, ICU/perawatan kritis, fisiologi tubuh, sejarah kedokteran. Ini pembeda yang kredibel.
+## Dokumen sumber (WAJIB baca sebelum kerja)
+- **`references/production-bible.md`** — otoritas tertinggi: brand lock, style guide, master style prompt, character sheets, struktur episode terkunci, pipeline, checklist. Bila ada konflik, bible menang.
+- **`references/VT-001-script.md`** — naskah teladan (gold standard) yang sudah bible-compliant. Tiru pola/altitude-nya untuk episode baru.
+- **`references/workplan.md`** — status produksi & rencana kerja hidup. Update tiap ada progres.
 
-## Aturan WAJIB (akurasi & keamanan medis)
-1. **Edukasi, BUKAN nasihat medis personal.** Jangan pernah menyuruh penonton mendiagnosis/mengobati diri sendiri, mengatur dosis, atau menghentikan terapi. Selalu arahkan ke tenaga kesehatan.
-2. **Fact-check ketat.** Minta Claude memverifikasi angka, mekanisme, guideline. Hindari klaim sensasional/menakut-nakuti.
-3. **Disclaimer di setiap video** (deskripsi + voice-over singkat): "Konten ini untuk edukasi umum, bukan pengganti konsultasi dokter."
-4. **Hindari konten membahayakan** (cara menyalahgunakan obat, prosedur berbahaya untuk ditiru, dosis spesifik yang bisa disalahgunakan seperti obat anestesi/sedasi). Jaga level tetap konseptual & aman.
-5. **Hormati privasi & etik.** Jangan pakai kasus pasien nyata yang bisa diidentifikasi.
+## Non-negotiable (ringkas — detail di bible)
+1. **Faceless.** Wajah dokter tidak pernah ditampilkan. Tanda tangan penutup: *"Take the pulse. Know the threshold."*
+2. **Etika & keamanan medis:** kasus dari **literatur terpublikasi** (bukan pasien bangsal), **inisial 2 huruf** (tak pernah nama), **disclaimer wajib** di tiap deskripsi, dan **centang disclosure "altered/synthetic content"** di YouTube Studio. Edukasi, BUKAN nasihat medis personal — jangan menyuruh diagnosis/atur dosis sendiri.
+3. **Verifikasi klinis:** Claude tidak menetapkan angka klinis atas nama dokter. Setiap dosis/angka fisiologi ditandai untuk diverifikasi user (lihat Catatan Produksi di naskah).
+4. **Palet terkunci** (maks 5 warna/scene), **cahaya dari dalam objek** (logika bioluminesensi laut dalam — bukan kosmik), **garis EKG Amber** sebagai motif tanda tangan. Jangan dilanggar.
 
-## Prasyarat
-- Higgsfield MCP tersambung ke Claude (lihat skill `ytfaceless` LANGKAH 1). Bila belum tersambung di sesi ini, workflow bisa dipelajari/di-dry-run tapi produksi otomatis belum bisa dijalankan.
-- Channel YouTube untuk publikasi.
+## Struktur episode TERKUNCI (bible bagian 5)
+Long-form 8–12 menit, urutan tidak berubah:
+`Cold open (bunuh miskonsepsi) → Title card → Latar manusia ("You see, …") → Eskalasi + etimologi → Mekanisme (turun ke mikro, maskot bekerja) → Aritmetika terbuka → PIVOT (jantung video) → Resolusi → Zoom out (analogi skala absurd) → Sign-off.`
+Aturan naskah: 1 pertanyaan besar/video · etimologi ≥3× · 1 analogi skala absurd (wajib) · arah selalu **ke dalam** sampai zoom-out · subscribe hanya 1 kalimat di akhir.
 
-## LANGKAH 1 — Setup (sama seperti ytfaceless)
-Ikuti LANGKAH 1 skill `ytfaceless`: buat akun Higgsfield → MCP and CLI → Add custom connector "Higgsfield" di Claude → lanjut di Claude Code.
+## Menulis naskah episode baru
+1. Pilih judul dari roadmap 10 video (bible bagian 7) atau usulkan yang sejenis.
+2. Riset kasus/mekanisme dari literatur; catat sitasi (tampil on-screen di 20 dtk pertama).
+3. Tulis penuh mengikuti tabel struktur, target 150 kata/menit. Bagi mana maskot muncul (MONI/CARDIO/ALVI/BACTI) sesuai perannya.
+4. Tandai semua angka klinis untuk diverifikasi dokter. Sertakan blok `[VISUAL]` + `[NARASI]` + Desain Audio per scene (ikuti format VT-001).
 
-## LANGKAH 2 — Pilih topik & tulis skrip (1 prompt)
-1. Pilih 1 topik dari **Bank Ide** di bawah (atau minta Claude pilih yang paling berpotensi viral).
-2. Prompt ke Claude:
-   > "You are scripting for a faceless educational health documentary channel (host is an anesthesiologist/ICU angle). Topic: <TOPIK>. Write a 5-minute script in a cinematic, second-person narrative style with a strong hook in the first 5 seconds. Keep it medically accurate, evergreen, and educational — NOT personal medical advice. Add a one-line disclaimer. Fact-check key claims."
-3. Tinjau skrip: hook kuat? akurat? aman (tidak memberi dosis/nasihat personal)? Perbaiki bila perlu.
+## Produksi visual — pakai Higgsfield MCP + companion skills
+Pipeline bible (bagian 6) dipetakan ke tool yang ada:
+1. **Character sheet lebih dulu** (aset paling berharga): skill `higgsfield-generate` (atau `higgsfield-soul-id` TIDAK dipakai — ini faceless). Prompt karakter = `[MASTER STYLE PROMPT]` + blok karakter dari bible bagian 4. Simpan `char-*-master.png`.
+2. **Kunci master style reference** dari 1 still terbaik.
+3. **Still per shot:** master prompt + gambar reference sheet sebagai reference image. Tanpa reference image konsistensi gagal.
+4. **Motion:** image-to-video, gerak minimal (denyut, partikel melayang, cairan mengalir), klip 5 dtk.
+5. **Narasi:** 1 voice terkunci selamanya (Higgsfield `generate_audio` / ElevenLabs).
+6. **Rakit + subtitle EN/ID + desain audio** (pulse-ox pitch turun = elemen audio kunci).
 
-## LANGKAH 3 — Generate video utuh (1 prompt)
-Prompt:
-> "Make a 5-minute cinematic documentary video from this script using Seedance 2.0 at 1080p, consistent visual style, AI voice-over that fits an educational medical tone, subtle background music. For a faceless YouTube channel."
+> **Catatan brand-fidelity:** workflow `higgsfield-video-explainer` bisa mempercepat, TAPI ia memakai "universal style key" sendiri yang mungkin tak menghormati palet/logika-cahaya terkunci. Untuk menjaga DNA visual, default-nya tetap jalur still→motion→assembly manual dengan master prompt + reference sheet. Pakai explainer hanya bila hasilnya lolos style guide.
 
-Higgsfield MCP memecah skrip jadi klip, generate visual + voice-over + musik, jaga gaya konsisten; Claude fact-check. Aset tersimpan ke folder proyek. Tinjau hasil.
+## Sebelum upload — jalankan checklist bible bagian 8
+Sitasi on-screen ≤20 dtk · disclaimer di deskripsi · disclosure sintetis dicentang · hanya inisial · ≥3 etimologi · 1 analogi skala absurd · pivot di paruh kedua · palet ≤7 warna terkunci · subtitle EN+ID · sign-off terucap.
 
-## LANGKAH 4 — Packaging (1 prompt)
-> "Prepare a YouTube upload package: 3 thumbnails for A/B testing (clean, curiosity-driven, no clickbait medical fear), several title options, an SEO description including the educational disclaimer, and relevant tags (health, medicine, anesthesia, ICU, human body, science)."
+## Blocker yang harus diingat
+- **Higgsfield credits = 0 (plan free):** generate tertahan sampai kredit diisi/trial aktif. Naskah & perencanaan tetap bisa jalan tanpa kredit.
+- Update `references/workplan.md` setiap menyelesaikan satu aset/tahap.
 
-## LANGKAH 5 — Skalakan (1 prompt)
-> "Make me two more videos from the same channel. Pick evergreen health/medical-science topics with high retention. Deep-research each individually, keep them accurate and safe, unique script and visual style each."
-
-(Opsi Shorts: minta Claude analisis Shorts kesehatan yang viral lalu buat Shorts edukatif original — cocok untuk pertumbuhan cepat.)
-
-## LANGKAH 6 — Upload & jadwalkan
-YouTube → Create → Upload → pilih file → tempel judul + deskripsi (dengan disclaimer) → unggah 3 thumbnail (A/B) → isi tags → Publish/Schedule. Ulangi.
-
-## LANGKAH 7 — Monetisasi & anti-demonetisasi
-- Syarat YPP: 1.000 subscriber + 4.000 jam tayang (atau jalur Shorts).
-- 3 aturan kualitas: suara AI natural & sesuai konteks; skrip original berbasis insight; visual diedit rapi.
-- Tambahan untuk niche kesehatan: jaga E-E-A-T (kredibilitas dokter), sertakan sumber di deskripsi bila mengutip data, hindari misinformasi medis (bisa memicu pembatasan monetisasi).
-
-## Bank Ide Topik (aman, evergreen, sinematik)
-Anestesi & ICU (konseptual, tanpa dosis):
-- "Apa yang terjadi pada tubuhmu saat dibius total?" (fisiologi anestesi umum)
-- "60 detik terakhir sebelum operasi: kerja tim anestesi"
-- "Bagaimana ventilator menjaga seseorang tetap hidup di ICU"
-- "Kenapa kita tidak mengingat apa pun saat operasi?"
-- "Nyeri: bagaimana tubuh mengirim & mematikan sinyalnya"
-- "Sepsis: perlombaan melawan waktu di ruang gawat darurat"
-Sains tubuh & sejarah kedokteran (audiens luas):
-- "Sejarah anestesi: dari eter 1846 sampai sekarang"
-- "Bagaimana jantung tetap berdetak tanpa perintah sadar"
-- "Apa yang sebenarnya terjadi saat kamu pingsan"
-- "Perjalanan oksigen dari udara ke setiap selmu"
-- "Kisah penemuan yang menyelamatkan jutaan nyawa di ICU"
-
-Contoh HOOK (detik pertama):
-- "Dalam 30 detik, dokter ini akan membuatmu tertidur tanpa kamu sadari — begini caranya."
-- "Mesin ini bernapas untukmu 20.000 kali sehari. Inilah cara kerjanya."
-- "Kamu tidak akan mengingat menit berikutnya. Dan itu memang disengaja."
-
-## Ringkasan alur (TL;DR)
-Setup MCP → pilih topik dari Bank Ide → 1 prompt skrip (akurat + disclaimer) → 1 prompt generate dokumenter → 1 prompt packaging → 1 prompt "2 video lagi" → upload & jadwalkan → jaga akurasi + E-E-A-T untuk monetisasi.
+## TL;DR alur
+Baca bible → pilih judul dari roadmap → tulis naskah bible-compliant (verifikasi angka klinis) → kunci 4 character sheet → shot list → still → motion → narasi → rakit+subtitle+audio → upload (disclosure) → shorts → update workplan.
