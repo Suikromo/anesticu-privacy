@@ -6,8 +6,16 @@ _Dibuat: 2026-07-31 · sumber riset di bagian akhir._
 
 ---
 
-## 0. Kenapa ada dokumen ini
+## 0. Kenapa ada dokumen ini & hubungannya dg playbook
 User minta evaluasi DNA/hook channel besar (rujukan utama: **BRIGHT SIDE**, @BRIGHTSIDEOFFICIAL) dan memasukkannya ke kinerja kita. Hasil evaluasi: **sebagian besar visual/format BRIGHT SIDE justru bertabrakan dengan positioning VT** — jadi yang diambil hanya **mekanik retensi yang universal**, bukan gaya/rigor-nya. Pembanding yang DNA-nya lebih dekat ke VT dicatat juga (Zack D. Films).
+
+> **Sumber DNA mentah = [`docs/brightside-playbook.md`](../../../../docs/brightside-playbook.md)** (analisis 2 format Bright Side: Countdown Listicle & Interactive Test, formula gabungan, template siap-isi, + ide adaptasi niche kesehatan). Dokumen INI **bukan** pengganti playbook — ini **lapisan penerapannya khusus untuk VT long-form**, disaring lewat bible.
+>
+> **Pembagian tugas:**
+> - `docs/brightside-playbook.md` → DNA umum + **Format A/B** (listicle/kuis). Cocok untuk skill generik `ytfaceless`, dan **opsional untuk VT Shorts**. **TIDAK** untuk VT long-form.
+> - `retention-dna.md` (ini) → mekanik retensi yang boleh masuk **VT long-form dokumenter** tanpa melanggar bible.
+>
+> ⚠️ **Catatan konflik:** bagian "Adaptasi Niche Kesehatan" di playbook mengusulkan episode Format A/B (listicle/kuis) untuk anestesi. Untuk **VT long-form itu ditolak** (bible: 1 mekanisme/video, bukan listicle). Format A/B hanya dipertimbangkan untuk **Shorts** atau channel lain — bukan episode utama VT.
 
 ---
 
@@ -81,6 +89,7 @@ Formula: **ambil proses tubuh yang salah dipahami → visualkan presisi → nara
 ---
 
 ## Sumber riset
+- **Internal (utama):** `docs/brightside-playbook.md` — analisis DNA/hook/copywriting Bright Side 2 format + adaptasi niche kesehatan. Baca ini lebih dulu.
 - BRIGHT SIDE — profil & strategi: [Wikipedia](https://en.wikipedia.org/wiki/Bright_Side_(YouTube_channel)), [thoughtleaders.io stats](https://app.thoughtleaders.io/youtube/bright-side), [Allin1panel — clickbait breakdown](https://allin1panel.com/bright-side-youtube-clickbait/).
 - Curiosity gap & click-promise vs clickbait: [Overseeros — Click Promise](https://www.overseeros.com/blog/youtube-click-promise), [YouGenie — Science of Clickbait](https://blog.yougenie.co/posts/science-of-clickbait-youtube/).
 - Hook & retensi (pattern interrupt, open loop, first 30s): [OpusClip — Hook Formulas](https://www.opus.pro/blog/youtube-shorts-hook-formulas), [RetentionRabbit](https://www.retentionrabbit.com/blog/youtube-hook-strategy-to-keep-viewers-watching), [TubeAnalytics — first 30s](https://www.tubeanalytics.net/blog/youtube-video-hook-first-30-seconds).

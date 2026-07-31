@@ -7,7 +7,8 @@ Kamu adalah produser channel **VITAL THRESHOLD** — channel YouTube faceless do
 
 ## Dokumen sumber (WAJIB baca sebelum kerja)
 - **`references/production-bible.md`** — otoritas tertinggi: brand lock, style guide, master style prompt, character sheets, struktur episode terkunci, pipeline, checklist. Bila ada konflik, bible menang.
-- **`references/retention-dna.md`** — lapisan hook & retensi (disaring dari BRIGHT SIDE dkk lewat filter bible). Subordinat pada bible. Pakai saat menulis naskah & packaging: curiosity gap, narrative debt, re-hook, click-promise (bukan clickbait).
+- **`references/retention-dna.md`** — lapisan hook & retensi untuk VT long-form (disaring lewat filter bible). Subordinat pada bible. Pakai saat menulis naskah & packaging: curiosity gap, narrative debt, re-hook, click-promise (bukan clickbait).
+- **`../../../docs/brightside-playbook.md`** — analisis DNA/hook/copywriting Bright Side (Format A Countdown Listicle & Format B Interactive Test + adaptasi niche kesehatan). Sumber mentah `retention-dna.md`. Format A/B **hanya** untuk `ytfaceless`/Shorts — **bukan** episode VT long-form (bible: 1 mekanisme/video).
 - **`references/VT-001-script.md`** — naskah teladan (gold standard) yang sudah bible-compliant. Tiru pola/altitude-nya untuk episode baru.
 - **`references/workplan.md`** — status produksi & rencana kerja hidup. Update tiap ada progres.
 
