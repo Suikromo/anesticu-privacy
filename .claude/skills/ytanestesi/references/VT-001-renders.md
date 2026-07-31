@@ -65,7 +65,7 @@ URL tiap job = pola `hf_YYYYMMDD_HHMMSS_<jobid>.png` di prefix yg sama; ambil vi
 | S05 (TPL) | Title-card bg (EKG sweep) | `fcbb2c0b-b4af-4e82-9ca7-0f919960be46` |
 | S10 | Tangan menutup pergelangan | `be7063f8-5d87-4ac5-a180-973f963a2fcc` |
 | S11 | Wajah pasien menghitung | `47eaf70a-0420-4f9d-a00b-7fb100557495` |
-| S12 (TPL) | Etymology/sign-off plate | `601503ee-8767-47a4-af1a-dc74dfa74c82` |
+| S12 (TPL) | Etymology/sign-off plate | `e68b8bdb-6f9a-4b5d-a991-681abfd6770b` (regen; ganti `601503ee…`) |
 | S15 | Cairan susu masuk kanula | `bab5d274-c22d-4425-9a1c-caed2d459f14` |
 | S16 | Aliran cairan lengan→bahu | `b71d2288-57d5-40fe-bafe-ce8ffea868cf` |
 | S18 | Cairan menyebar ke kepala | `aaf1e23b-0c6d-4a77-9c0f-90324c3a8b16` |
