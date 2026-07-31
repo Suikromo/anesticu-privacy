@@ -12,9 +12,9 @@ _Terakhir diperbarui: 2026-07-31_
 | Production Bible v1.0 | ✅ Selesai | `references/production-bible.md` — dokumen terkunci |
 | Naskah VT-001 (Anesthesia) | ✅ Selesai (draft) | `references/VT-001-script.md` — hasil cowork, bible-compliant |
 | Verifikasi angka klinis VT-001 | ⬜ Perlu dokter | 2 mg/kg, propofol 1%, ~8 mnt kerja, 86 M neuron, ~20 dtk sirkulasi (lihat Catatan Produksi di naskah) |
-| Character sheet MONI | 🟡 Ter-generate, belum ter-commit | Higgsfield job `f3357d4e…`, Nano Banana Pro, 2752×1536 16:9, 5 pose. File `char-moni-master.png` belum bisa disimpan ke repo (CDN egress-blocked — lihat Blocker #1). URL di bawah. |
-| Character sheet CARDIO | 🟡 Ter-generate, belum ter-commit | Higgsfield job `420f332c…`, Nano Banana Pro, 2752×1536 16:9, 5 pose. `char-cardio-master.png` — idem. |
-| Character sheet ALVI | 🟡 Ter-generate, belum ter-commit | Higgsfield job `0d99e267…`, Nano Banana Pro, 2752×1536 16:9, 5 pose. `char-alvi-master.png` — idem. |
+| Character sheet MONI | ✅ Selesai & ter-commit | `references/char-moni-master.png` (2000×1116, 5 pose). Higgsfield job `f3357d4e…` (Nano Banana Pro, 16:9). |
+| Character sheet CARDIO | ✅ Selesai & ter-commit | `references/char-cardio-master.png` (2000×1116, 5 pose). Higgsfield job `420f332c…`. |
+| Character sheet ALVI | ✅ Selesai & ter-commit | `references/char-alvi-master.png` (2000×1116, 5 pose). Higgsfield job `0d99e267…`. |
 | Character sheet BACTI | ⬜ Belum | `char-bacti-master.png` (belum dipakai di VT-001) |
 | Master style reference terkunci | ⬜ Belum | simpan 1 still terbaik sbg acuan konsistensi |
 | Shot list VT-001 (64 shot) | ✅ Selesai | `references/VT-001-shotlist.md` — padat di PIVOT, ~48 generate + 16 reuse |
@@ -26,18 +26,15 @@ _Terakhir diperbarui: 2026-07-31_
 | Potong 2–3 Shorts VT-001 | ⬜ Belum | 20–45 dtk |
 
 ## Blocker aktif
-1. **CDN Higgsfield diblok egress → PNG tidak bisa di-download & di-commit ke repo.** MCP `mcp__Higgs__*` SUDAH tersambung dan generate BERHASIL (kredit 1000, plan plus). Tapi file hasil dilayani lewat `d8j0ntlcm91z4.cloudfront.net`, dan host itu + semua `*.higgsfield.ai` ditolak policy egress (403 CONNECT). Cuma host whitelist (mis. `github.com`) yang tembus, jadi byte gambar tidak bisa ditarik ke environment ini. **Fix (pilih satu):**
-   - Whitelist `d8j0ntlcm91z4.cloudfront.net` (atau `*.cloudfront.net`) di network policy environment, lalu jalankan ulang download (URL di bawah) → simpan `char-*-master.png`, commit.
-   - Atau download manual 3 URL di bawah dari akun Higgsfield, taruh di `references/`, commit.
-   - Atau jalankan dari environment tanpa restriksi egress.
+_(tidak ada blocker character sheet — 3 PNG sudah masuk repo.)_
 
-### URL hasil generate (siap di-download begitu egress dibuka)
-Job Higgsfield tersimpan permanen di akun; URL PNG penuh (2k, 16:9):
-- **MONI** (`f3357d4e-4216-4347-b0a7-43401bfce947`): `https://d8j0ntlcm91z4.cloudfront.net/user_3HGLmxg8ehmKtoLNSzMjqzKQ0Ec/hf_20260731_142808_f3357d4e-4216-4347-b0a7-43401bfce947.png`
-- **CARDIO** (`420f332c-8f45-49bc-8e97-1b2f495a58e4`): `https://d8j0ntlcm91z4.cloudfront.net/user_3HGLmxg8ehmKtoLNSzMjqzKQ0Ec/hf_20260731_142814_420f332c-8f45-49bc-8e97-1b2f495a58e4.png`
-- **ALVI** (`0d99e267-b395-463c-825d-b2815af012c3`): `https://d8j0ntlcm91z4.cloudfront.net/user_3HGLmxg8ehmKtoLNSzMjqzKQ0Ec/hf_20260731_142826_0d99e267-b395-463c-825d-b2815af012c3.png`
+### Catatan aset character sheet
+- 3 PNG di `references/` (`char-moni/cardio/alvi-master.png`, 2000×1116) = versi yang di-review & di-approve user, di-decode dari attachment chat lalu convert ke PNG. **Konsistensi sudah dicek visual: 5 pose/karakter, palet, glow-from-within — approved.**
+- Master resolusi penuh (2752×1536, 16:9) masih tersimpan di akun Higgsfield bila nanti butuh yang lebih besar. Job ID: MONI `f3357d4e…`, CARDIO `420f332c…`, ALVI `0d99e267…`. URL CDN (`d8j0ntlcm91z4.cloudfront.net/user_3HGLmxg8ehmKtoLNSzMjqzKQ0Ec/…`) hanya bisa di-download dari environment tanpa restriksi egress (di sesi ini host itu diblok policy 403).
+- BACTI belum dibuat (tidak dipakai di VT-001).
 
-2. Setelah 3 PNG masuk repo: kunci sebagai reference image, review konsistensi (5 pose/karakter, palet 5 warna, glow-from-within), lalu lanjut ~48 shot `VT-001-shotlist.md`. Prompt sumber tetap di `references/character-sheet-prompts.md`.
+### Berikutnya
+Kunci 3 PNG ini sebagai reference image, lalu lanjut generate ~48 shot `VT-001-shotlist.md` (pakai master prompt + reference sheet). Prompt sumber tetap di `references/character-sheet-prompts.md`.
 
 ## Urutan kerja berikutnya (begitu kredit ada)
 1. Generate **4 character sheet** (MONI, CARDIO, ALVI, BACTI) → pilih terbaik → simpan `char-*-master.png`. **Ini aset paling berharga — kunci gaya dulu sebelum apa pun.**
