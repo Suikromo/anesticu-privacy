@@ -21,7 +21,7 @@ _Terakhir diperbarui: 2026-07-31_
 Establishing ruang operasi bergaya bible, TANPA maskot — dipakai sbg reference image untuk 36 shot NEW biar seragam.
 | Aset | Render job ID | URL |
 |---|---|---|
-| Master style still (OR interior) | `323c14a0-cb24-47b3-b523-2938959a7547` | _(rendering — URL menyusul)_ |
+| Master style still (OR interior) | `323c14a0-cb24-47b3-b523-2938959a7547` | `hf_20260731_162131_323c14a0-cb24-47b3-b523-2938959a7547.png` |
 
 ## Batch 1 — 9 shot CHAR (maskot, reference terkunci)
 | Shot | Karakter / state | Ref sheet | Render job ID | URL PNG (prefix di atas + nama file) |
