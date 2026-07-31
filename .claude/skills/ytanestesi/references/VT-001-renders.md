@@ -57,7 +57,46 @@ Gerbang verifikasi: uji apakah reference style-still mengontaminasi shot mikro. 
 
 **Status Wave 1:** ⏳ menunggu verifikasi user (khusus: shot mikro S20/S23/S24/S27 — apakah gaya konsisten tanpa ketularan meja-OR dari style still).
 
-## Belum di-generate
-- **26 shot NEW sisa:** S03, S10, S11, S15, S16, S18, S19, S22, S25, S30, S31, S32, S35, S40, S42, S43, S45, S48, S49, S50, S51, S52, S53, S54, S58, S62.
-- **2 TPL sisa:** S05 (title-card bg), S12 (etymology-card / pola S64 sign-off).
-- **16 REUSE** — tidak di-generate (layer assembly dari frame yang sudah ada).
+## Batch 2 · Wave 2 — 14 shot NEW/TPL (anchor: style still `323c14a0`)
+URL tiap job = pola `hf_YYYYMMDD_HHMMSS_<jobid>.png` di prefix yg sama; ambil via `job_display`/gallery (CDN egress-blocked di sesi ini).
+| Shot | Isi | Render job ID |
+|---|---|---|
+| S03 | Orang di meja OR, glow padam, EKG hidup | `a5e251fa-5d70-403d-9e3c-f9ea69f1c6e9` |
+| S05 (TPL) | Title-card bg (EKG sweep) | `fcbb2c0b-b4af-4e82-9ca7-0f919960be46` |
+| S10 | Tangan menutup pergelangan | `be7063f8-5d87-4ac5-a180-973f963a2fcc` |
+| S11 | Wajah pasien menghitung | `47eaf70a-0420-4f9d-a00b-7fb100557495` |
+| S12 (TPL) | Etymology/sign-off plate | `601503ee-8767-47a4-af1a-dc74dfa74c82` |
+| S15 | Cairan susu masuk kanula | `bab5d274-c22d-4425-9a1c-caed2d459f14` |
+| S16 | Aliran cairan lengan→bahu | `b71d2288-57d5-40fe-bafe-ce8ffea868cf` |
+| S18 | Cairan menyebar ke kepala | `aaf1e23b-0c6d-4a77-9c0f-90324c3a8b16` |
+| S19 | Siluet tubuh + jalur menyala | `d8f1368e-1ec0-4acc-ae01-be15f51539d3` |
+| S22 | Garis info antar-otak | `12abc3c6-1e5f-44b7-9814-50eccc01d5bd` |
+| S25 | Propofol menempel reseptor | `803b8554-2f1c-4a53-9628-82b477f6caea` |
+| S30 | Glow memudar jadi gelap | `5df7b6b8-b866-466c-bd2a-a746f15e1468` |
+| S31 (hero) | Jari sentuh bulu mata | `9e05614a-1a19-4b9e-ab4f-70b7607aa848` |
+| S32 | Syringe + ruang angka | `0d0b289f-9363-40ff-be9e-aadcd525a609` |
+
+## Batch 2 · Wave 3 — 14 shot NEW (anchor: style still `323c14a0`)
+| Shot | Isi | Render job ID |
+|---|---|---|
+| S35 (hero) | Syringe vs sendok makan | `7f5823c1-ba1c-40dc-a01d-3d8263a5d1fa` |
+| S40 | Etimologi APNEA (divider) | `4841f76d-0779-4682-a67c-923a938a9a84` |
+| S42 | Etimologi HYPOTENSION (divider) | `ce26afc0-be93-4fc4-8a7c-278bcec7f6d3` |
+| S43 | Lidah jatuh tutup jalan napas | `fc65c955-75a6-4d79-9f72-023178ffbaf3` |
+| S45 | Nada oksigen turun (visual) | `36e4165e-85e1-42a7-9fe6-fafe80460b47` |
+| S48 (hero) | 4 ikon status merah | `adade1de-2b99-47ad-a115-5a80edb9ca6a` |
+| S49 (hero) | Syringe mengancam (klimaks) | `48de1eb9-0e60-48bd-a53c-1cce9db8698c` |
+| S50 | Siluet dokter kepala meja | `bcd17f99-f2d6-442b-90e0-08623a9c592b` |
+| S51 | Paru diisi oksigen + sungkup | `cd4743c0-eca8-4c58-8e8a-6d08627467fa` |
+| S52 (hero) | Laringoskop | `7075c157-f955-4a57-aea7-e7e764221fad` |
+| S53 | Etimologi LARYNGOSCOPE (divider) | `4b8b0a29-e1ea-41a4-90ea-cd519a3e2206` |
+| S54 | Tabung ET + ventilator | `c187c510-a6d2-4d36-ac7c-7952a957b004` |
+| S58 | Wide pasien stabil + ventilator | `2fcf2c28-d0ac-411a-9472-ba3b9088b9eb` |
+| S62 (hero) | Siluet gedung RS + EKG | `7421d4b7-247b-466d-bb03-0847ae1035e6` |
+
+**Status Batch 2 (Wave 1–3):** semua **35 NEW + 3 TPL** ter-submit ke Higgsfield, anchor = master style still. ⏳ nunggu QC user di gallery.
+
+## Rekap render VT-001
+- ✅ **9 CHAR** (reference sheet terkunci) · ✅ **1 master style still** · ✅ **38 NEW/TPL** (35 NEW + 3 TPL, anchor style still).
+- **16 REUSE** — tidak di-generate (layer assembly dari frame yang sudah ada di atas).
+- **Total generate VT-001 = 48** (sesuai anggaran shotlist). Sisa pipeline: motion → narasi → rakit+subtitle → upload → Shorts.
