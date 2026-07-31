@@ -40,7 +40,24 @@ Establishing ruang operasi bergaya bible, TANPA maskot — dipakai sbg reference
 
 > Catatan: batch pertama sempat ter-generate di Nano Banana 2 (flash) karena salah alias model, lalu di-ulang di Nano Banana Pro (tabel di atas = versi Pro, ini yang dipakai). Job flash diabaikan.
 
-## Belum di-generate (menunggu approval batch 1)
-- **36 shot NEW** (S02, S03, S06, S08, S10, S11, S13, S14, S15, S16, S18, S19, S20, S22, S23, S24, S25, S27, S30, S31, S32, S35, S40, S42, S43, S45, S48, S49, S50, S51, S52, S53, S54, S58, S62 — cek shotlist untuk detail; sebagian butuh anchor gaya karena tanpa maskot).
-- **3 TPL** (S01 EKG-line, S05 title-card, S12/S64 pola) — basis visual saja; teks/tipografi ditambah saat assembly (CapCut).
+## Batch 2 · Wave 1 — 10 shot NEW/TPL (anchor: master style still `323c14a0`)
+Gerbang verifikasi: uji apakah reference style-still mengontaminasi shot mikro. Prefix URL sama seperti di atas.
+| Shot | Isi | Render job ID | Nama file PNG |
+|---|---|---|---|
+| S01 (TPL) | EKG-line plate | `7c07f78f-a936-423e-9f6f-314dace8d3d9` | `hf_20260731_234006_7c07f78f-a936-423e-9f6f-314dace8d3d9.png` |
+| S02 | Orang tidur (glow cyan) | `84fde688-2827-481b-ac7e-7eb44d8a3564` | `hf_20260731_234016_84fde688-2827-481b-ac7e-7eb44d8a3564.png` |
+| S06 | Establishing holding area | `5da3a719-d22c-40de-b3f3-7323a1f2a6fc` | `hf_20260731_234019_5da3a719-d22c-40de-b3f3-7323a1f2a6fc.png` |
+| S08 | Kanula IV di punggung tangan | `e9a86da7-510c-492f-b6b5-a8a3d41e2164` | `hf_20260731_234022_e9a86da7-510c-492f-b6b5-a8a3d41e2164.png` |
+| S13 | Etymology divider (garis EKG) | `9e1dd1e9-7169-4c93-99bd-abbbff8c9f67` | `hf_20260731_234025_9e1dd1e9-7169-4c93-99bd-abbbff8c9f67.png` |
+| S14 | 3 ikon (feel/remember/aware) | `2125127c-6ca1-480b-940d-21f17033b8c6` | `hf_20260731_234027_2125127c-6ca1-480b-940d-21f17033b8c6.png` |
+| S20 (hero) | Jaringan neuron | `d997441b-ab65-437d-835f-50dcc26b76a2` | `hf_20260731_234031_d997441b-ab65-437d-835f-50dcc26b76a2.png` |
+| S23 (hero) | Sinaps (celah) | `86e4ca9a-af39-4b1b-acd1-cc3b00863fb8` | `hf_20260731_234033_86e4ca9a-af39-4b1b-acd1-cc3b00863fb8.png` |
+| S24 | Reseptor + gate tertutup | `6f7c2eb2-8e9f-4e00-803f-1c6566b1501a` | `hf_20260731_234036_6f7c2eb2-8e9f-4e00-803f-1c6566b1501a.png` |
+| S27 | Klorida masuk sel | `f59ced4c-6b14-40a5-8c6f-34e6e407e896` | `hf_20260731_234039_f59ced4c-6b14-40a5-8c6f-34e6e407e896.png` |
+
+**Status Wave 1:** ⏳ menunggu verifikasi user (khusus: shot mikro S20/S23/S24/S27 — apakah gaya konsisten tanpa ketularan meja-OR dari style still).
+
+## Belum di-generate
+- **26 shot NEW sisa:** S03, S10, S11, S15, S16, S18, S19, S22, S25, S30, S31, S32, S35, S40, S42, S43, S45, S48, S49, S50, S51, S52, S53, S54, S58, S62.
+- **2 TPL sisa:** S05 (title-card bg), S12 (etymology-card / pola S64 sign-off).
 - **16 REUSE** — tidak di-generate (layer assembly dari frame yang sudah ada).
