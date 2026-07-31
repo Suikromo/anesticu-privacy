@@ -26,8 +26,8 @@ _Terakhir diperbarui: 2026-07-31_
 | Potong 2–3 Shorts VT-001 | ⬜ Belum | 20–45 dtk |
 
 ## Blocker aktif
-1. **Higgsfield credits = 0 (plan free).** Semua generate gambar/video/voice tertahan sampai kredit diisi / trial aktif.
-2. **Egress policy:** beberapa host diblok di sesi ini (YouTube, clerk auth). Generate tetap bisa via MCP `mcp__Higgs__*` saat kredit ada.
+1. **Koneksi Higgsfield putus setelah container restart.** MCP `mcp__Higgs__*` tidak tersambung; CLI gagal auth (clerk.higgsfield.ai diblok egress). Kredit SUDAH diisi (upgrade). **Fix:** mulai sesi Claude Code baru (harness re-auth konektor) atau re-connect konektor Higgsfield di claude.ai, lalu retry generate.
+2. Prompt 3 character sheet SUDAH siap: `references/character-sheet-prompts.md` — begitu MCP tersambung, tinggal generate.
 
 ## Urutan kerja berikutnya (begitu kredit ada)
 1. Generate **4 character sheet** (MONI, CARDIO, ALVI, BACTI) → pilih terbaik → simpan `char-*-master.png`. **Ini aset paling berharga — kunci gaya dulu sebelum apa pun.**
