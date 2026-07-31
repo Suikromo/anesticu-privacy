@@ -17,7 +17,7 @@ _Terakhir diperbarui: 2026-07-31_
 | Character sheet ALVI | ⬜ Belum | `char-alvi-master.png` |
 | Character sheet BACTI | ⬜ Belum | `char-bacti-master.png` (belum dipakai di VT-001) |
 | Master style reference terkunci | ⬜ Belum | simpan 1 still terbaik sbg acuan konsistensi |
-| Shot list VT-001 (55–65 gambar) | ⬜ Belum | 1 gambar / 8–10 dtk narasi |
+| Shot list VT-001 (64 shot) | ✅ Selesai | `references/VT-001-shotlist.md` — padat di PIVOT, ~48 generate + 16 reuse |
 | Ilustrasi still VT-001 | ⬜ Belum | master prompt + reference sheet |
 | Motion (image-to-video) VT-001 | ⬜ Belum | klip 5 dtk, gerak minimal (denyut/partikel/cairan) |
 | Narasi (voice terkunci) | ⬜ Belum | 1 voice selamanya (ElevenLabs / Higgsfield audio) |
