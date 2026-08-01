@@ -185,10 +185,12 @@ Dipecah **per scene** (bukan 1 file panjang) supaya gampang disinkronkan di CapC
 | 5 — Obat masuk | perjalanan cairan putih | `5afb1c80-4730-48d0-be9f-ea7cd1c705be` |
 | 6 — Mekanisme | 86 M neuron → sinaps → tes bulu mata | `a10a6f5a-fc36-4dc6-a471-51614fabd283` |
 | 7 — Aritmetika | 2 mg/kg → 1 sendok makan → 5–10 mnt | `052b5821-e5c1-498e-844a-652a4635b884` |
-| 8 — PIVOT | apnea/hipotensi/airway → "drug is trying to kill you" | ⏳ 429 rate-limit, retry |
-| 9 — Resolusi | laringoskop, ventilator, "the actual job" | ⏳ 429 rate-limit, retry |
-| 10 — Zoom out | jaringan pulih, "they pray you come back" | ⏳ 429 rate-limit, retry |
-| 11 — Sign-off | "Take the pulse. Know the threshold." | ⏳ 429 rate-limit, retry |
+| 8 — PIVOT | apnea/hipotensi/airway → "drug is trying to kill you" | `c2cc894f-9257-4693-a0a4-67a7434b866d` |
+| 9 — Resolusi | laringoskop, ventilator, "the actual job" | `ebae7e26-a55f-4f2d-9270-c3b5c7c6eb57` |
+| 10 — Zoom out | jaringan pulih, "they pray you come back" | `af4fdc95-d5d5-4045-b1ec-833ed070bddd` |
+| 11 — Sign-off | "Take the pulse. Know the threshold." | `eaa87c00-b153-4670-b8d1-71de670c88cd` |
+
+✅ **10/10 scene narasi selesai.** (Catatan: `seed_audio` kena 429 rate-limit kalau dikirim paralel — kirim berurutan.)
 
 _Scene 2 = title card, tanpa narasi._
 
