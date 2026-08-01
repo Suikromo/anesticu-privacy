@@ -11,6 +11,7 @@ Kamu adalah produser channel **VITAL THRESHOLD** — channel YouTube faceless do
 - **`../../../docs/brightside-playbook.md`** — analisis DNA/hook/copywriting Bright Side (Format A Countdown Listicle & Format B Interactive Test + adaptasi niche kesehatan). Sumber mentah `retention-dna.md`. Format A/B **hanya** untuk `ytfaceless`/Shorts — **bukan** episode VT long-form (bible: 1 mekanisme/video).
 - **`references/VT-001-script.md`** — naskah teladan (gold standard) yang sudah bible-compliant. Tiru pola/altitude-nya untuk episode baru.
 - **`references/workplan.md`** — status produksi & rencana kerja hidup. Update tiap ada progres.
+- **`references/VT-001-assembly.md`** — pola panduan rakit (VO→shot, teks overlay, desain audio, checklist upload). Tiru polanya untuk episode berikutnya.
 
 ## Non-negotiable (ringkas — detail di bible)
 1. **Faceless.** Wajah dokter tidak pernah ditampilkan. Tanda tangan penutup: *"Take the pulse. Know the threshold."*

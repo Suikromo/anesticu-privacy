@@ -23,7 +23,8 @@ _Terakhir diperbarui: 2026-07-31_
 | Ilustrasi still VT-001 | 🟡 Semua ter-generate, nunggu QC | 48 still ter-generate (9 CHAR + 1 style still + 38 NEW/TPL), Nano Banana Pro, anchor terkunci. Detail: `references/VT-001-renders.md`. Wave 1 sudah di-QC "bersih"; Wave 2–3 nunggu QC gallery. |
 | Motion (image-to-video) VT-001 | 🟡 Semua ter-submit (~46 klip) | Kling 3.0 Turbo 5 dtk 1080p, gerak minimal. M1 hero ✅ QC lolos. M2 CHAR + M3 plate + M4 NEW rendering. **Skop: semua shot di-motion termasuk plate kartu** → CapCut tinggal teks+potong+subtitle. Semua preset sinematik ditolak (style-lock). Detail: `VT-001-renders.md`. |
 | Narasi (voice terkunci) | ✅ Selesai | **Voice TERKUNCI: Cillian** (`seed_audio`, `d8ba9f14…`) — dicatat di bible bagian 1 + SKILL.md, dipakai selamanya. Narasi VT-001 lengkap 10/10 scene (job ID di `VT-001-renders.md`). |
-| Rakit + subtitle EN/ID | ⬜ Belum | CapCut atau assembly Higgsfield |
+| Panduan rakit (assembly) | ✅ Selesai | `references/VT-001-assembly.md` — peta VO→shot, daftar teks overlay, desain audio, lapisan retensi, checklist upload, ide Shorts. |
+| Rakit + subtitle EN/ID | ⬜ Belum (kerja manual user) | Ikuti `VT-001-assembly.md` di CapCut. Semua aset sudah jadi & tercatat. |
 | Upload VT-001 + disclosure sintetis | ⬜ Belum | centang "altered/synthetic content" (WAJIB) |
 | Potong 2–3 Shorts VT-001 | ⬜ Belum | 20–45 dtk |
 
