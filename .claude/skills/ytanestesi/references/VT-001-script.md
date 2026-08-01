@@ -68,9 +68,9 @@ Then a hand closes around your wrist.
 
 It is the same arm the tube is in. Drug going in on one side, fingers reading your pulse on the other, in the same limb, at the same moment. They are doing it by hand because the machine takes a few seconds to notice things that a fingertip already knows.
 
-Someone asks you to count to thirty.
+Someone asks you to count to twenty.
 
-You will not reach fifteen.
+You will not reach thirty.
 
 ---
 

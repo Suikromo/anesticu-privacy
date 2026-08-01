@@ -34,7 +34,7 @@ Semua prompt gambar = `[MASTER STYLE PROMPT]` (bible bagian 3) + reference image
 | S08 | 0:52–1:02 | Zoom punggung tangan: kanula IV, glow cyan tipis masuk | "…a small plastic tube into a vein on the back of your hand." | 🆕 NEW |
 | S09 | 1:02–1:14 | Close MONI, gelombang berdenyut seirama | "It is pitched to your pulse…" | 🔁 REUSE (S07) |
 | S10 | 1:14–1:26 | Siluet tangan menutup pergelangan (lengan sama dg kanula) | "Then a hand closes around your wrist." | 🆕 NEW |
-| S11 | 1:26–1:35 | Close wajah pasien, kesan menghitung | "…count to thirty. You will not reach fifteen." | 🆕 NEW |
+| S11 | 1:26–1:35 | Close wajah pasien, kesan menghitung | "…count to twenty. You will not reach thirty." | 🆕 NEW |
 
 ## SCENE 4 — ETIMOLOGI 1 · 1:35–2:10 · 3 shot
 | # | Waktu | Visual | Narasi (cue) | Status |
