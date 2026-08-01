@@ -266,7 +266,7 @@ The network rebuilds itself. And you come back.
 
 But here is the part that unsettles most people, including a lot of the people who do this for a living.
 
-You will have no sense that any time passed at all. There is no darkness to remember, because darkness is still an experience and you did not have one. There will be the moment you said eight, and then there will be a ceiling and a different room, and nothing in between.
+You will have no sense that any time passed at all. There is no darkness to remember, because darkness is still an experience and you did not have one. There will be the moment you said twelve, and then there will be a ceiling and a different room, and nothing in between.
 
 Every day, in every hospital on earth, hundreds of thousands of people cross that line and come back. It is one of the most ordinary things medicine does.
 

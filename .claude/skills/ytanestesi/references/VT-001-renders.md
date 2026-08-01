@@ -88,7 +88,7 @@ URL tiap job = pola `hf_YYYYMMDD_HHMMSS_<jobid>.png` di prefix yg sama; ambil vi
 | S49 (hero) | Syringe mengancam (klimaks) | `48de1eb9-0e60-48bd-a53c-1cce9db8698c` |
 | S50 | Siluet dokter kepala meja | `bcd17f99-f2d6-442b-90e0-08623a9c592b` |
 | S51 | Paru diisi oksigen + sungkup | `cd4743c0-eca8-4c58-8e8a-6d08627467fa` |
-| S52 (hero) | Laringoskop | `7075c157-f955-4a57-aea7-e7e764221fad` |
+| S52 (hero) | Laringoskop (orientasi diperbaiki: handle & blade ke arah tubuh/tenggorokan) | `f94831b1-7100-4924-8fef-c7a943de4a4b` (ganti `7075c157…`) |
 | S53 | Etimologi LARYNGOSCOPE (divider) | `4b8b0a29-e1ea-41a4-90ea-cd519a3e2206` |
 | S54 | Tabung ET + ventilator | `c187c510-a6d2-4d36-ac7c-7952a957b004` |
 | S58 | Wide pasien stabil + ventilator | `2fcf2c28-d0ac-411a-9472-ba3b9088b9eb` |
@@ -104,10 +104,26 @@ Kling 3.0 Turbo, 5 dtk, 1080p, 16:9, start_image = still shot; prompt gerak mini
 | S23 | Sinyal arc di celah sinaps | `7ad9f7b2-7229-480c-a799-208487a4eb2b` |
 | S31 | Glow "bernapas", jari nyaris diam | `ed7d8cca-e599-49a7-8bd5-9ce6da3c489f` |
 | S49 | Glow merah berdenyut mengancam | `fe60cabb-0973-43c2-b4dc-3df040853c65` |
-| S52 | Lampu cyan laringoskop berkedip (retry literal, tolak preset) | `1ceca1e6-0a64-4d08-8e84-1c7d20fb95df` |
+| S52 | Lampu cyan laringoskop berkedip | ~~`1ceca1e6…`~~ **basi** — still S52 diperbaiki orientasinya (`f94831b1`), re-motion pending |
 | S62 | Garis EKG amber mengalir + gedung breathing | `6bcd4287-b1bf-4ee0-97b0-708f2c90bdef` |
 
-**Status M1:** ⏳ render. QC kritis: apakah Kling menjaga **flat-2D vector** (bukan malah nambah 3D/parallax/kamera gerak) & palet terkunci. Kalau lolos → lanjut motion sisa still.
+**Status M1:** ✅ QC user "lolos" (flat-2D terjaga). Kecuali S52: still-nya salah orientasi laringoskop → regen (`f94831b1`), motion S52 diulang setelah still baru jadi.
+
+## Motion — Batch M2: 9 CHAR (maskot)
+Kling 3.0 Turbo, 5 dtk, 1080p, start_image = still CHAR, gerak sesuai state maskot.
+| Shot | Gerak | Video job ID |
+|---|---|---|
+| S07 | MONI neutral — waveform cyan scroll | `e5768113-e40f-4fd9-a83c-53c4adf6a200` |
+| S17 | CARDIO healthy — denyut + cairan | `88bc1b08-0bbf-4ac7-b924-17a9d79deb89` |
+| S37 | ALVI healthy — napas mengembang | `db04440e-2ee3-4683-ae04-1eb5046ec4cb` |
+| S39 | ALVI collapsed — glow flicker lemah | `1f014bef-fea2-4d6a-85c7-6aa9c0e35fc2` (retry; 503 pertama) |
+| S41 | CARDIO straining — denyut cepat + sweat | `d55db26c-9c3d-4a17-bdf5-7ed4a5304318` |
+| S44 | MONI alert — waveform amber jagged | `998d5beb-aed5-444a-a1a3-9ed4999e5931` |
+| S46 | MONI alarm — waveform merah cepat | `2fe505d0-74c5-4f27-9388-a474504511d6` |
+| S47 | CARDIO failing — glow redup lambat | `9aeb9e6a-f75c-4149-ac7c-d564be876608` |
+| S55 | ALVI recruited — re-inflate mekanis | `8c51437c-5df6-4653-900c-fc991795c39a` |
+
+**Status M2:** ⏳ render. Sisa motion: S52 (re-motion), + shot NEW dinamis (aliran obat S15/S16/S18, klorida S27, dll) — kartu-teks/divider TIDAK di-motion di sini (dianimasikan di assembly).
 
 ## Rekap render VT-001
 - ✅ **9 CHAR** (reference sheet terkunci) · ✅ **1 master style still** · ✅ **38 NEW/TPL** (35 NEW + 3 TPL, anchor style still).
