@@ -12,6 +12,7 @@ Kamu adalah produser channel **VITAL THRESHOLD** — channel YouTube faceless do
 - **`references/VT-001-script.md`** — naskah teladan (gold standard) yang sudah bible-compliant. Tiru pola/altitude-nya untuk episode baru.
 - **`references/workplan.md`** — status produksi & rencana kerja hidup. Update tiap ada progres.
 - **`references/VT-001-assembly.md`** — pola panduan rakit (VO→shot, teks overlay, desain audio, checklist upload). Tiru polanya untuk episode berikutnya.
+- **`references/VT-001-packaging.md`** — pola packaging (judul click-promise, deskripsi+chapters+sitasi, tag, thumbnail). Tiru polanya tiap episode.
 - **`references/prompt-pack-google.md`** — prompt siap-tempel untuk generate MANUAL di Gemini app / Flow (dipakai saat kredit Higgsfield habis; modelnya sama — Nano Banana = Gemini Image).
 
 ## Non-negotiable (ringkas — detail di bible)

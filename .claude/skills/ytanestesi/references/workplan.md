@@ -25,7 +25,8 @@ _Terakhir diperbarui: 2026-07-31_
 | Narasi (voice terkunci) | ✅ Selesai | **Voice TERKUNCI: Cillian** (`seed_audio`, `d8ba9f14…`) — dicatat di bible bagian 1 + SKILL.md, dipakai selamanya. Narasi VT-001 lengkap 10/10 scene (job ID di `VT-001-renders.md`). |
 | Panduan rakit (assembly) | ✅ Selesai | `references/VT-001-assembly.md` — peta VO→shot, daftar teks overlay, desain audio, lapisan retensi, checklist upload, ide Shorts. |
 | Rakit + subtitle EN/ID | ⬜ Belum (kerja manual user) | Ikuti `VT-001-assembly.md` di CapCut. Semua aset sudah jadi & tercatat. |
-| Upload VT-001 + disclosure sintetis | ⬜ Belum | centang "altered/synthetic content" (WAJIB) |
+| Packaging VT-001 (judul/deskripsi/tag/thumbnail) | ✅ Selesai | `references/VT-001-packaging.md` — judul + 3 alternatif A/B, deskripsi siap tempel (chapters + disclaimer + sumber), tag, konsep & prompt thumbnail. |
+| Upload VT-001 + disclosure sintetis | ⬜ Belum | centang "altered/synthetic content" (WAJIB). Pakai paket di `VT-001-packaging.md`. |
 | Potong 2–3 Shorts VT-001 | ⬜ Belum | 20–45 dtk |
 
 ## Blocker aktif
