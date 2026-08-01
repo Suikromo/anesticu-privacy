@@ -158,6 +158,22 @@ _(S12 = `7619428b…`, S40 = `7b9fda95-b626-4493-a787-22414b010739`, S53 = `22ba
 
 **Total motion VT-001 ≈ 46 klip** (M1 6 + M2 9 + M3 8 + M4 23), 5 dtk 1080p, ~10 kredit/klip.
 
+---
+
+## Narasi — tes voice (KEPUTUSAN TERKUNCI SELAMANYA)
+Bible: **1 voice dipakai selamanya** untuk 10 episode. Tes memakai **teks cold open VT-001 asli** (bukan sample generik) supaya terdengar dalam konteks. Model: `seed_audio` (Seed Audio 1.0).
+
+| Kandidat | Gender | voice_id | Job tes |
+|---|---|---|---|
+| **Callum** | pria | `858499d9-fef5-40e1-bc29-b4dc661dc283` | `0ff66081-2c10-428b-bc02-449ceaf00bd5` |
+| **Sterling** | pria | `dc382508-c8bd-443c-8cb2-46e57b8d2e6f` | `aba4e6b9-df62-4ab1-8c26-46579041d1db` |
+| **Naomi** | wanita | `caeba733-3c17-43db-863e-69c7025512cd` | `69842497-7dc9-4ae6-84b8-4826d29469b3` |
+| **Simone** | wanita | `d3b201aa-086c-4d54-8568-a6bb9f4a0b63` | `e57b00f4-9008-4944-9392-f1ad050afd46` |
+
+**Kriteria pilih (dari bible + retention-dna):** tenang & terkendali (kontras dgn isi yang mencekam — pelajaran dari Zack D. Films), bukan hype/iklan · jelas untuk telinga non-native (audiens internasional) · sanggup bawa jeda hening sebelum PIVOT · terdengar kredibel untuk konten medis.
+
+**Status:** ⏳ nunggu user memilih. Begitu terpilih → kunci voice_id di sini + `production-bible.md`, lalu generate narasi penuh VT-001 per-scene.
+
 ## Rekap render VT-001
 - ✅ **9 CHAR** (reference sheet terkunci) · ✅ **1 master style still** · ✅ **38 NEW/TPL** (35 NEW + 3 TPL, anchor style still).
 - **16 REUSE** — tidak di-generate (layer assembly dari frame yang sudah ada di atas).
