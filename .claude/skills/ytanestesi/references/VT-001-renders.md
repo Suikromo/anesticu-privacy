@@ -169,6 +169,7 @@ Bible: **1 voice dipakai selamanya** untuk 10 episode. Tes memakai **teks cold o
 | **Sterling** | pria | `dc382508-c8bd-443c-8cb2-46e57b8d2e6f` | `aba4e6b9-df62-4ab1-8c26-46579041d1db` |
 | **Naomi** | wanita | `caeba733-3c17-43db-863e-69c7025512cd` | `69842497-7dc9-4ae6-84b8-4826d29469b3` |
 | **Simone** | wanita | `d3b201aa-086c-4d54-8568-a6bb9f4a0b63` | `e57b00f4-9008-4944-9392-f1ad050afd46` |
+| **Cillian** | pria | `d8ba9f14-8a24-44db-932b-99e16c45bd32` | `6708c4f0-6cc1-48ab-a5ad-1d37c2f9cc89` (diminta user) |
 
 **Kriteria pilih (dari bible + retention-dna):** tenang & terkendali (kontras dgn isi yang mencekam — pelajaran dari Zack D. Films), bukan hype/iklan · jelas untuk telinga non-native (audiens internasional) · sanggup bawa jeda hening sebelum PIVOT · terdengar kredibel untuk konten medis.
 
