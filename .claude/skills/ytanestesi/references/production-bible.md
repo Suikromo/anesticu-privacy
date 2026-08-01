@@ -14,6 +14,7 @@ Dokumen referensi permanen. Buka setiap kali produksi. Jangan improvisasi di lua
 | Bahasa kedua | Subtitle Indonesia |
 | Durasi long-form | 8–12 menit |
 | Wajah dokter | Tidak ditampilkan |
+| **Voice narator (TERKUNCI)** | **Cillian** (pria) — Higgsfield preset `d8ba9f14-8a24-44db-932b-99e16c45bd32`, model `seed_audio`. Dipilih 2026-08-01 dari 5 kandidat. **Dipakai selamanya untuk semua episode.** Jangan ganti — konsistensi suara = identitas channel. |
 | Tanda tangan penutup | "Take the pulse. Know the threshold." |
 
 **Positioning (satu kalimat, hafalkan):**

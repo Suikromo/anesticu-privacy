@@ -36,7 +36,7 @@ Pipeline bible (bagian 6) dipetakan ke tool yang ada:
 2. **Kunci master style reference** dari 1 still terbaik.
 3. **Still per shot:** master prompt + gambar reference sheet sebagai reference image. Tanpa reference image konsistensi gagal.
 4. **Motion:** image-to-video, gerak minimal (denyut, partikel melayang, cairan mengalir), klip 5 dtk.
-5. **Narasi:** 1 voice terkunci selamanya (Higgsfield `generate_audio` / ElevenLabs).
+5. **Narasi:** voice TERKUNCI = **Cillian** (`seed_audio`, preset `d8ba9f14-8a24-44db-932b-99e16c45bd32`). Dipakai selamanya di semua episode — jangan pilih voice lain.
 6. **Rakit + subtitle EN/ID + desain audio** (pulse-ox pitch turun = elemen audio kunci).
 
 > **Catatan brand-fidelity:** workflow `higgsfield-video-explainer` bisa mempercepat, TAPI ia memakai "universal style key" sendiri yang mungkin tak menghormati palet/logika-cahaya terkunci. Untuk menjaga DNA visual, default-nya tetap jalur still→motion→assembly manual dengan master prompt + reference sheet. Pakai explainer hanya bila hasilnya lolos style guide.

@@ -173,7 +173,24 @@ Bible: **1 voice dipakai selamanya** untuk 10 episode. Tes memakai **teks cold o
 
 **Kriteria pilih (dari bible + retention-dna):** tenang & terkendali (kontras dgn isi yang mencekam — pelajaran dari Zack D. Films), bukan hype/iklan · jelas untuk telinga non-native (audiens internasional) · sanggup bawa jeda hening sebelum PIVOT · terdengar kredibel untuk konten medis.
 
-**Status:** ⏳ nunggu user memilih. Begitu terpilih → kunci voice_id di sini + `production-bible.md`, lalu generate narasi penuh VT-001 per-scene.
+**✅ TERPILIH: Cillian** (2026-08-01) — `d8ba9f14-8a24-44db-932b-99e16c45bd32`, model `seed_audio`. **Dikunci di `production-bible.md` bagian 1 + SKILL.md. Dipakai selamanya untuk semua episode.**
+
+## Narasi penuh VT-001 (voice: Cillian)
+Dipecah **per scene** (bukan 1 file panjang) supaya gampang disinkronkan di CapCut. Total ~8.860 karakter ≈ 1.480 kata ≈ 10 menit @150 wpm — sesuai target bible.
+| Scene | Isi | Audio job ID |
+|---|---|---|
+| 1 — Cold open | "…is like falling asleep. It is not." | `0b47c7e6-d289-443e-ae21-3c853bc3ca68` |
+| 3 — Holding area | trolley, monitor, count to twenty | `ca947392-60e0-46bd-9d40-75dda8bcebcc` |
+| 4 — Etimologi 1 | AN + AISTHESIS | `a4083a86-dc4b-4294-ab2e-07ff660b25d9` |
+| 5 — Obat masuk | perjalanan cairan putih | `5afb1c80-4730-48d0-be9f-ea7cd1c705be` |
+| 6 — Mekanisme | 86 M neuron → sinaps → tes bulu mata | `a10a6f5a-fc36-4dc6-a471-51614fabd283` |
+| 7 — Aritmetika | 2 mg/kg → 1 sendok makan → 5–10 mnt | `052b5821-e5c1-498e-844a-652a4635b884` |
+| 8 — PIVOT | apnea/hipotensi/airway → "drug is trying to kill you" | ⏳ 429 rate-limit, retry |
+| 9 — Resolusi | laringoskop, ventilator, "the actual job" | ⏳ 429 rate-limit, retry |
+| 10 — Zoom out | jaringan pulih, "they pray you come back" | ⏳ 429 rate-limit, retry |
+| 11 — Sign-off | "Take the pulse. Know the threshold." | ⏳ 429 rate-limit, retry |
+
+_Scene 2 = title card, tanpa narasi._
 
 ## Rekap render VT-001
 - ✅ **9 CHAR** (reference sheet terkunci) · ✅ **1 master style still** · ✅ **38 NEW/TPL** (35 NEW + 3 TPL, anchor style still).
