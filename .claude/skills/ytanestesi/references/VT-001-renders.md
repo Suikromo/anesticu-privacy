@@ -128,31 +128,45 @@ Kling 3.0 Turbo, 5 dtk, 1080p, start_image = still CHAR, gerak sesuai state mask
 ## Motion — Batch M3 & M4: sisa semua shot
 **Keputusan skop (user: "CapCut jangan banyak edit"):** SEMUA still di-motion, **termasuk plate kartu/divider** — jadi garis EKG sudah bergerak sendiri di klip. Di CapCut tinggal **tempel teks + potong + subtitle**, tidak perlu animasi manual.
 
-### M3 — plate & kartu (8)
-| Shot | Video job ID | | Shot | Video job ID |
-|---|---|---|---|---|
-| S52 (still baru) | `5b7f2d3b-3bc8-4232-80fb-7f71e46df208` | | S13 divider | `c9d7614e-872d-49ec-965c-0723da34cf3e` |
-| S01 EKG plate | `57cbc4e7-c6eb-47a1-8ceb-f42a5690754a` | | S40 APNEA | `7619428b-00db-49e5-8e6d-28300e6b5332` → S12 |
-| S05 title-card | `ce8dab07-2ccc-4cc6-ba92-7db384d0b543` | | S40 | `7619428b…`(S12) / `4564febf…`(S42) |
-| S30 fade-to-black | `04382061-5cad-4226-8afc-228cd815bb52` | | S42 HYPOTENSION | `4564febf-7d08-42b2-add8-ba4b53fb17d2` |
-
-_(S12 = `7619428b…`, S40 = `7b9fda95-b626-4493-a787-22414b010739`, S53 = `22ba9c6a-8b8a-4eb7-bea9-5a82958c4244`)_
+### M3 — plate & kartu (9)
+| Shot | Isi | Video job ID |
+|---|---|---|
+| S52 | Laringoskop (still baru, orientasi benar) | `5b7f2d3b-3bc8-4232-80fb-7f71e46df208` |
+| S01 | EKG plate | `57cbc4e7-c6eb-47a1-8ceb-f42a5690754a` |
+| S05 | Title-card plate | `ce8dab07-2ccc-4cc6-ba92-7db384d0b543` |
+| S12 | Etymology/sign-off plate | `7619428b-00db-49e5-8e6d-28300e6b5332` |
+| S13 | Divider ANESTHESIA | `c9d7614e-872d-49ec-965c-0723da34cf3e` |
+| S30 | Fade-to-black | `04382061-5cad-4226-8afc-228cd815bb52` |
+| S40 | Divider APNEA | `7b9fda95-b626-4493-a787-22414b010739` |
+| S42 | Divider HYPOTENSION | `4564febf-7d08-42b2-add8-ba4b53fb17d2` |
+| S53 | Divider LARYNGOSCOPE | `22ba9c6a-8b8a-4eb7-bea9-5a82958c4244` |
 
 ### M4 — shot NEW dinamis (23)
-| Shot | Job ID | Shot | Job ID |
-|---|---|---|---|
-| S02 | `03a27e84-73d2-469e-bf6b-218fd3bbf447` | S27 | `3e02cd65-1e3c-4592-ba4e-ef1403014d9c` |
-| S03 | `62bb7c8f-966e-476f-baad-c197f40bd110` | S32 | `e22b172f-645c-4e02-bfdb-201f8d024d11` |
-| S06 | `ccd7adb7-289a-4dc5-86ec-858ad3f43f07` | S35 | `820e3a89-6121-4c4e-a805-55e2cc9d385b` |
-| S08 | `38cc875f-d589-4cf8-9e07-dd99a4e858fd` | S43 | `aa688897-be69-422e-b66c-4222b435379f` |
-| S10 | `8f7b01da-4eaf-42bc-b460-1436a9fc5b9c` | S45 | `60651e34-6b3e-46bb-ab61-4192ce788859` |
-| S11 | `684f8405-f275-461e-81e8-b376011937ff` | S48 | `b52cfab8-a089-4585-81cc-92d3b22230c0` |
-| S15 | `178f2657-556f-4723-b86d-7d98f728966e` | S50 | `4302cea9-374e-4414-a3c2-10796a921ec5` |
-| S16 | `ebfa02f2-cb99-4dc8-a04b-705d791a6242` | S51 | `b46adcc8-eafa-4f39-86f0-45b22d7ae745` |
-| S18 | `24c4384c-5774-44f4-a175-fe9fca05c780` | S54 | `ce4dfeda-2e72-4c32-9b47-1feb42cff658` |
-| S19 | `2cb9e821-d07a-46eb-9798-b5eb1e37e38b` | S58 | `7a9798a6-8519-4497-a4ca-9a6c3fc79f86` |
-| S22 | `446c2ebc-064f-4f69-b2bd-5aeab8628854` | S24 | `a48db079-8280-4e92-9fa7-d0436f8af4ba` |
-| S25 | `8de7b895-422c-4e6e-9e74-03e68990844f` | | |
+| Shot | Job ID |
+|---|---|
+| S02 | `03a27e84-73d2-469e-bf6b-218fd3bbf447` |
+| S03 | `62bb7c8f-966e-476f-baad-c197f40bd110` |
+| S06 | `ccd7adb7-289a-4dc5-86ec-858ad3f43f07` |
+| S08 | `38cc875f-d589-4cf8-9e07-dd99a4e858fd` |
+| S10 | `8f7b01da-4eaf-42bc-b460-1436a9fc5b9c` |
+| S11 | `684f8405-f275-461e-81e8-b376011937ff` |
+| S15 | `178f2657-556f-4723-b86d-7d98f728966e` |
+| S16 | `ebfa02f2-cb99-4dc8-a04b-705d791a6242` |
+| S18 | `24c4384c-5774-44f4-a175-fe9fca05c780` |
+| S19 | `2cb9e821-d07a-46eb-9798-b5eb1e37e38b` |
+| S22 | `446c2ebc-064f-4f69-b2bd-5aeab8628854` |
+| S24 | `a48db079-8280-4e92-9fa7-d0436f8af4ba` |
+| S25 | `8de7b895-422c-4e6e-9e74-03e68990844f` |
+| S27 | `3e02cd65-1e3c-4592-ba4e-ef1403014d9c` |
+| S32 | `e22b172f-645c-4e02-bfdb-201f8d024d11` |
+| S35 | `820e3a89-6121-4c4e-a805-55e2cc9d385b` |
+| S43 | `aa688897-be69-422e-b66c-4222b435379f` |
+| S45 | `60651e34-6b3e-46bb-ab61-4192ce788859` |
+| S48 | `b52cfab8-a089-4585-81cc-92d3b22230c0` |
+| S50 | `4302cea9-374e-4414-a3c2-10796a921ec5` |
+| S51 | `b46adcc8-eafa-4f39-86f0-45b22d7ae745` |
+| S54 | `ce4dfeda-2e72-4c32-9b47-1feb42cff658` |
+| S58 | `7a9798a6-8519-4497-a4ca-9a6c3fc79f86` |
 
 > **Catatan preset:** Higgsfield berulang kali menyarankan preset sinematik "IN THE DARK". SEMUA ditolak (`declined_preset_id`) & di-generate literal — preset itu akan melanggar style-lock bible (flat 2D, kamera statis).
 
