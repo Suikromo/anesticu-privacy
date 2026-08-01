@@ -12,7 +12,7 @@ _Terakhir diperbarui: 2026-07-31_
 | Production Bible v1.0 | ✅ Selesai | `references/production-bible.md` — dokumen terkunci |
 | Retention DNA v1.0 | ✅ Selesai | `references/retention-dna.md` — lapisan hook/retensi (riset BRIGHT SIDE dkk, disaring lewat bible). Tertaut di SKILL.md. |
 | Naskah VT-001 (Anesthesia) | ✅ Selesai (draft) | `references/VT-001-script.md` — hasil cowork, bible-compliant |
-| Verifikasi angka klinis VT-001 | ⬜ Perlu dokter | 2 mg/kg, propofol 1%, ~8 mnt kerja, 86 M neuron, ~20 dtk sirkulasi (lihat Catatan Produksi di naskah) |
+| Verifikasi angka klinis VT-001 | ✅ Terverifikasi dokter (2026-08-01) | 2 mg/kg (dewasa sehat; lansia 1–1,5) ✅ · 1% ✅ · durasi diperbaiki ~8→**5–10 mnt** · 86 M neuron ✅ · onset LOC ≈30 dtk, sirkulasi ~20 dtk. Detail + 1 keputusan terbuka (beat "won't reach fifteen") di Catatan Produksi naskah. |
 | Character sheet MONI | ✅ Selesai & ter-commit | `references/char-moni-master.png` (2000×1116, 5 pose). Higgsfield job `f3357d4e…` (Nano Banana Pro, 16:9). |
 | Character sheet CARDIO | ✅ Selesai & ter-commit | `references/char-cardio-master.png` (2000×1116, 5 pose). Higgsfield job `420f332c…`. |
 | Character sheet ALVI | ✅ Selesai & ter-commit | `references/char-alvi-master.png` (2000×1116, 5 pose). Higgsfield job `0d99e267…`. |

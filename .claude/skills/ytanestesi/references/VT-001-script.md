@@ -172,7 +172,7 @@ Lalu di samping sendok makan.
 **[NARASI]**
 Let us look at how much drug this actually takes.
 
-A standard induction dose is around two milligrams for every kilogram you weigh. If you weigh seventy five kilograms, that is one hundred and fifty milligrams.
+For a healthy adult, a standard induction dose is around two milligrams for every kilogram you weigh. If you weigh seventy five kilograms, that is one hundred and fifty milligrams.
 
 The solution is one percent, which means ten milligrams in every millilitre. One hundred and fifty milligrams comes out to fifteen millilitres.
 
@@ -180,7 +180,7 @@ Fifteen millilitres is one tablespoon.
 
 Everything you have ever seen, every voice you recognise, every memory you own, and the continuous sense that you are someone at all, is suspended by slightly less than one tablespoon of white liquid.
 
-And it holds for about eight minutes.
+And it holds for somewhere between five and ten minutes.
 
 Which brings us to the problem.
 
@@ -296,13 +296,16 @@ Take the pulse. Know the threshold.
 
 **Jumlah scene visual:** 11 scene besar, perlu dipecah menjadi sekitar 55–65 gambar (1 gambar per 8–10 detik narasi).
 
-**Yang perlu Anda verifikasi sebelum rekam** (saya tidak boleh menetapkan angka klinis atas nama Anda):
-- Dosis induksi 2 mg/kg dan konsentrasi 1% — sesuaikan dengan praktik yang Anda anggap paling representatif.
-- Durasi kerja ~8 menit untuk dosis bolus tunggal.
-- Angka 86 miliar neuron.
-- Waktu sirkulasi lengan ke otak ~20 detik.
+**✅ SUDAH DIVERIFIKASI dokter (2026-08-01):**
+| Klaim | Status | Catatan |
+|---|---|---|
+| Propofol induksi 2 mg/kg | ✅ Benar (dengan konteks) | Dewasa sehat ASA I–II <65 th: **2–2,5 mg/kg** IV, dititrasi. Lansia/lemah/ASA III–IV: **1–1,5 mg/kg**. → naskah kini menyebut "For a healthy adult…". |
+| Propofol 1% (10 mg/mL) | ✅ Benar | Sediaan standar; ada juga 2% (20 mg/mL), tapi 1% paling umum untuk induksi. |
+| Durasi kerja ~8 menit | ⚠️ Diperbaiki → **5–10 menit** | Efek hipnosis 1 bolus ~5–10 mnt (redistribusi/usia/dosis). Naskah diubah: "about eight minutes" → "somewhere between five and ten minutes". **Teks on-screen S36/S19 samakan** (ganti "~8 minutes" → "5–10 min"). |
+| 86 miliar neuron | ✅ Benar | Herculano-Houzel (stereologi). Angka lama "100 miliar" kini dianggap terlalu tinggi. |
+| Onset hilang kesadaran | ⚠️ Perhatikan | Onset IV **20–40 dtk** (single value **≈30 dtk** paling representatif). Sirkulasi lengan→otak **~20 dtk tetap benar** → baris "journey takes about twenty seconds" DIPERTAHANKAN. Tapi beat dramatis Scene 3 "count to thirty. You will not reach fifteen" mengimplikasikan LOC ~15 dtk — lebih cepat dari onset klinis. **KEPUTUSAN ANDA:** pertahankan sebagai lisensi dramatis, atau longgarkan (mis. "you may not reach twenty"). Belum diubah, nunggu keputusan. |
 
-Kalau ada yang menurut Anda tidak akurat atau terlalu disederhanakan sampai menyesatkan, ubah. Anda yang bertanggung jawab atas isinya, bukan saya.
+Anda yang bertanggung jawab atas isinya. Kalau ada yang perlu diubah lagi, sebutkan.
 
 **Yang sengaja tidak masuk:** anesthesia awareness. Itu video tersendiri (nomor 6 di daftar) dan akan melemahkan pivot kalau dimasukkan di sini.
 

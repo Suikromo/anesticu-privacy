@@ -75,7 +75,7 @@ Semua prompt gambar = `[MASTER STYLE PROMPT]` (bible bagian 3) + reference image
 | S33 | 4:56–5:06 | Angka "75 kg → 150 mg" | "…seventy five kilograms, that is 150 mg." | 🔁 REUSE (S32+angka) |
 | S34 | 5:06–5:16 | "1% = 10 mg/mL → 15 mL" | "…fifteen millilitres." | 🔁 REUSE (S32+angka) |
 | S35 | 5:16–5:24 | Syringe 15 mL disandingkan dg sendok makan | "Fifteen millilitres is one tablespoon." | 🆕 NEW (hero: analogi) |
-| S36 | 5:24–5:30 | Sendok makan vs siluet tubuh penuh, teks "~8 minutes" | "…suspended by less than one tablespoon… holds ~8 minutes." | 🔁 REUSE (S35+siluet) |
+| S36 | 5:24–5:30 | Sendok makan vs siluet tubuh penuh, teks "5–10 min" | "…suspended by less than one tablespoon… holds five to ten minutes." | 🔁 REUSE (S35+siluet) |
 
 ## SCENE 8 — PIVOT · 5:30–7:05 · 13 shot **(PALING PADAT — jantung video)**
 | # | Waktu | Visual | Narasi (cue) | Status |
