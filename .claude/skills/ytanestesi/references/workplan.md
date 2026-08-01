@@ -29,7 +29,12 @@ _Terakhir diperbarui: 2026-07-31_
 | Potong 2–3 Shorts VT-001 | ⬜ Belum | 20–45 dtk |
 
 ## Blocker aktif
-_(tidak ada blocker character sheet — 3 PNG sudah masuk repo.)_
+**Kredit Higgsfield habis (2026-08-01).** Tidak menghambat VT-001 — semua aset (48 still, 46 klip, 10 narasi) sudah jadi & tercatat; sisa pekerjaan VT-001 murni perakitan di CapCut.
+**Jalur pengganti dipilih user: generate MANUAL di Google (Gemini app / Flow) dgn langganan Google AI Pro** → panduan: `references/prompt-pack-google.md`.
+- Modelnya sama: `nano_banana_pro` = **Gemini 3 Pro Image**. Jadi gaya visual tetap konsisten dgn aset yang sudah ada.
+- Untuk video, Flow memakai **Veo** (bukan Kling) — perkuat kata kunci penahan gerak (lihat prompt pack bagian 4).
+- ⚠️ Google AI Pro = akses web UI saja, **bukan** API key. Otomatisasi penuh butuh API key AI Studio (billing terpisah); endpoint `generativelanguage.googleapis.com` sudah terbukti tembus dari environment ini bila suatu saat ditempuh.
+- Claude tidak bisa menjalankan Flow/Gemini app (web UI diblok egress) → generate = kerja manual user, Claude menyiapkan prompt & menjaga catatan.
 
 ### Catatan aset character sheet
 - 3 PNG di `references/` (`char-moni/cardio/alvi-master.png`, 2000×1116) = versi yang di-review & di-approve user, di-decode dari attachment chat lalu convert ke PNG. **Konsistensi sudah dicek visual: 5 pose/karakter, palet, glow-from-within — approved.**
