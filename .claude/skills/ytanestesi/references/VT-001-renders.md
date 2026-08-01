@@ -96,6 +96,19 @@ URL tiap job = pola `hf_YYYYMMDD_HHMMSS_<jobid>.png` di prefix yg sama; ambil vi
 
 **Status Batch 2 (Wave 1–3):** semua **35 NEW + 3 TPL** ter-submit ke Higgsfield, anchor = master style still. ⏳ nunggu QC user di gallery.
 
+## Motion (image-to-video) — Batch M1: 6 hero
+Kling 3.0 Turbo, 5 dtk, 1080p, 16:9, start_image = still shot; prompt gerak minimal (bible: denyut/partikel/cairan, kamera statis, jaga flat-2D). 10 kredit/klip.
+| Shot | Gerak | Video job ID |
+|---|---|---|
+| S20 | Neuron flicker + sinyal jalan | `98389079-763a-4b98-b559-795a74b80c3f` |
+| S23 | Sinyal arc di celah sinaps | `7ad9f7b2-7229-480c-a799-208487a4eb2b` |
+| S31 | Glow "bernapas", jari nyaris diam | `ed7d8cca-e599-49a7-8bd5-9ce6da3c489f` |
+| S49 | Glow merah berdenyut mengancam | `fe60cabb-0973-43c2-b4dc-3df040853c65` |
+| S52 | Lampu cyan laringoskop berkedip (retry literal, tolak preset) | `1ceca1e6-0a64-4d08-8e84-1c7d20fb95df` |
+| S62 | Garis EKG amber mengalir + gedung breathing | `6bcd4287-b1bf-4ee0-97b0-708f2c90bdef` |
+
+**Status M1:** ⏳ render. QC kritis: apakah Kling menjaga **flat-2D vector** (bukan malah nambah 3D/parallax/kamera gerak) & palet terkunci. Kalau lolos → lanjut motion sisa still.
+
 ## Rekap render VT-001
 - ✅ **9 CHAR** (reference sheet terkunci) · ✅ **1 master style still** · ✅ **38 NEW/TPL** (35 NEW + 3 TPL, anchor style still).
 - **16 REUSE** — tidak di-generate (layer assembly dari frame yang sudah ada di atas).
