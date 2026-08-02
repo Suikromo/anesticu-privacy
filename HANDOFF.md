@@ -4,7 +4,7 @@ Dokumen serah-terima. **Tempel isi bagian "CARA LANJUT" ke chat/sesi baru mana p
 
 - **Repo:** `Suikromo/anesticu-privacy`
 - **Branch kerja:** `claude/youtube-video-learning-wgjcmq` ← SEMUA file ada di sini (BUKAN di `main`, BUKAN di repo `anesticu_pro`)
-- **Terakhir diperbarui:** 2026-07-31
+- **Terakhir diperbarui:** 2026-08-01
 
 ---
 
@@ -26,7 +26,7 @@ Berawal dari mempelajari 1 video YouTube (workflow bikin channel faceless AI pak
 
 1. **2 skill produksi konten** (di `.claude/skills/`).
 2. **Playbook DNA Bright Side** (analisis hook/copywriting).
-3. **Channel "Vital Threshold"** — dokumenter edukasi anestesi/ICU: Production Bible, Retention DNA, naskah episode 1, shot list 64 shot, **3 character sheet (MONI/CARDIO/ALVI) sudah ter-generate**, dan batch 1 still (9 shot) berjalan.
+3. **Channel "Vital Threshold"** — dokumenter edukasi anestesi/ICU. **VT-001 lengkap asetnya:** Production Bible, Retention DNA, naskah (angka klinis terverifikasi dokter), shot list 64 shot, 3 character sheet, 48 still, ~46 klip motion, narasi 10 scene (voice Cillian terkunci), panduan rakit, packaging YouTube. Sisa: rakit di CapCut + upload.
 4. **Setup Higgsfield** (CLI + companion skills) + dokumentasi.
 
 ---
@@ -47,9 +47,13 @@ docs/
       production-bible.md           ← OTORITAS: brand, gaya visual, struktur, etika
       VT-001-script.md              ← naskah episode 1 (Anesthesia) — bible-compliant
       VT-001-shotlist.md            ← 64 shot, padat di PIVOT, tanda REUSE
-      VT-001-renders.md             ← log render still (batch 1: 9 shot CHAR)
+      VT-001-renders.md             ← log SEMUA job ID (still, motion, narasi)
       character-sheet-prompts.md    ← 3 prompt sumber (MONI/CARDIO/ALVI)
       retention-dna.md              ← lapisan hook/retensi (Bright Side disaring lewat bible)
+      VT-001-assembly.md            ← panduan rakit CapCut (VO→shot, teks, audio, checklist)
+      VT-001-packaging.md           ← judul, deskripsi, tag, konsep+prompt thumbnail
+      VT-001-rename-map.md          ← job ID → nama file final (104 aset)
+      prompt-pack-google.md         ← prompt manual utk Gemini/Flow (pengganti Higgsfield)
       char-moni-master.png          ← ✅ character sheet MONI (2000×1116, 5 pose)
       char-cardio-master.png        ← ✅ character sheet CARDIO
       char-alvi-master.png          ← ✅ character sheet ALVI
@@ -74,30 +78,75 @@ docs/
 
 ## ✅ STATUS & BLOCKER
 
-**Selesai:** Production Bible ✅ · Retention DNA ✅ · Naskah VT-001 ✅ · Shot list VT-001 (64 shot) ✅ · **3 character sheet (MONI/CARDIO/ALVI) ter-generate & ter-commit ✅** · Higgsfield CLI ter-install ✅
+**Selesai (VT-001 — SEMUA ASET PRODUKSI BERES):** Production Bible ✅ · Retention DNA ✅ · Naskah + **verifikasi angka klinis oleh dokter** ✅ · Shot list 64 shot ✅ · 3 character sheet ✅ (ter-commit) · **48 still** ✅ · **~46 klip motion** ✅ · **narasi 10 scene** ✅ (voice **Cillian** TERKUNCI selamanya) · panduan rakit `VT-001-assembly.md` ✅ · packaging judul/deskripsi/tag/thumbnail `VT-001-packaging.md` ✅ · peta rename aset `VT-001-rename-map.md` ✅
 
-**Sedang jalan:** ilustrasi still VT-001 — **batch 1 = 9 shot CHAR** sudah ter-generate (Nano Banana Pro, reference sheet terkunci), nunggu review konsistensi. Sisa: **36 NEW + 3 TPL**. Detail: `references/VT-001-renders.md`.
+**Sedang jalan:** memindahkan 104 file aset dari akun Higgsfield → Google Drive (manual oleh user, lihat blocker jaringan di bawah).
 
-**Belum:** sisa still → motion (image-to-video) → narasi → rakit + subtitle → upload → Shorts. (lihat `workplan.md`)
+**Belum:** rakit di CapCut → subtitle EN/ID → upload (disclosure sintetis) → Shorts → VT-002.
 
-**Kredit Higgsfield:** sudah di-upgrade user (bukan 0). Character sheet berhasil dibuat, jadi jalur MCP terbukti bisa.
+**Kredit Higgsfield: HABIS (1 Agu 2026).** Tidak menghambat VT-001 (semua aset sudah jadi). Jalur pengganti yang dipilih user: **generate manual di Google Gemini/Flow** dgn langganan Google AI Pro → `references/prompt-pack-google.md`. Catatan: `nano_banana_pro` **memang model Google** (= Gemini 3 Pro Image), jadi pindah ke Google tidak merusak konsistensi gaya.
 
-**Catatan koneksi (sesi remote):**
-- MCP `mcp__Higgs__*` kadang naik-turun saat container restart; kalau hilang, cek ulang lewat ToolSearch atau buka sesi baru.
-- CLI `higgsfield` tak terpakai: host `clerk.higgsfield.ai` (token OAuth) **diblok egress** → auth CLI gagal. Pakai MCP saja.
-- Download master full-res dari CDN Higgsfield (`d8j0ntlcm91z4.cloudfront.net/...`) **diblok egress** di sesi ini. PNG yang di-commit adalah versi yang di-decode dari attachment chat (2000×1116, sudah cukup untuk referensi). Master 2752×1536 tersimpan di akun Higgsfield (Job ID di `workplan.md`).
+---
+
+### 🔒 BLOKIR JARINGAN — akar masalah & solusi (PENTING, jangan diulang)
+
+**Gejala:** `curl` ke `d8j0ntlcm91z4.cloudfront.net` (CDN Higgsfield) selalu gagal — `000` / `connect_rejected` / HTTP 403 di CONNECT. Sudah dites berkali-kali sepanjang proyek.
+
+**Akar masalah:** semua egress dari container lewat **proxy penegak kebijakan**. Host yang tidak ada di allowlist ditolak di level CONNECT. Ini **konfigurasi statis** yang dipilih saat environment dibuat — bukan gangguan sementara, bukan rate-limit, bukan soal kredit. **Retry berapa kali pun hasilnya sama.** Aturan proxy: jangan retry, jangan akali, laporkan.
+
+**Kenapa sebagian jalan, sebagian tidak** (ini yang sering membingungkan):
+| Jalur | Lewat | Hasil |
+|---|---|---|
+| `curl`/`git` dari shell | proxy egress environment | hanya host allowlist: `github.com`, pypi/npm, `generativelanguage.googleapis.com` |
+| Tool MCP (Drive, Gmail, Higgsfield) | **server MCP di luar container** | ✅ selalu jalan, tidak kena policy |
+
+→ Karena itu Claude **bisa** membuat folder & file di Google Drive, tapi **tidak bisa** mengunduh satu PNG pun dari CDN. Bisa menaruh di tujuan, tidak bisa mengambil dari sumber.
+
+**Akibat nyata:** 104 file aset (48 still + 46 klip + 10 narasi) **hanya ada di akun Higgsfield**, tidak pernah bisa masuk repo. Yang ada di repo cuma **job ID + peta rename**. 3 character sheet bisa masuk repo hanya karena user paste gambarnya ke chat lalu di-decode dari attachment.
+
+**Solusi (urutan yang disepakati user):**
+1. **[2] Download manual** dari gallery Higgsfield → rename pakai `VT-001-rename-map.md` → upload ke Google Drive. ← sedang dikerjakan
+2. **[1] Environment baru dgn network policy longgar** (izinkan egress luas / tambah `*.cloudfront.net`). Ini solusi permanen. ⚠️ Perubahan policy **tidak berlaku pada sesi berjalan** — wajib environment/sesi baru. Dok: `code.claude.com/docs/en/claude-code-on-the-web`
+3. **[3] Claude Code lokal** di komputer user — tanpa proxy, akses penuh.
+
+**Blokir lain yang sudah terbukti:**
+- `clerk.higgsfield.ai` (OAuth CLI Higgsfield) → diblok. CLI tak terpakai, gunakan MCP.
+- `aistudio.google.com`, `labs.google` (Flow) → diblok. Web UI tidak bisa diotomasi Claude; generate Google = kerja manual user.
+- `generativelanguage.googleapis.com` → **TEMBUS** ✅. Kalau nanti user menyediakan API key Google AI Studio (billing terpisah dari langganan Pro), otomatisasi penuh **mungkin** dilakukan lewat skrip. Jangan tempel key di chat — pasang sebagai environment variable.
 - **Canva & Notion:** perlu otorisasi interaktif user (opsional, belum dipakai).
+
+### 📦 Di mana aset berada
+| Aset | Lokasi | Aman? |
+|---|---|---|
+| Naskah, bible, panduan, prompt, peta | repo git | ✅ permanen |
+| 3 character sheet PNG | repo git (`references/`) | ✅ permanen |
+| 48 still · 46 klip · 10 narasi | **akun Higgsfield** → dipindah ke **Google Drive** | ⚠️ sedang diamankan |
+
+Google Drive tujuan: folder **V1 1/8/26** (`1p4fgdR7aUiG5qM5UohWy4XjMh4IjYP74`) — sudah berisi subfolder `stills/`, `clips/`, `vo/` + dokumen peta rename.
+
+> **Jangan commit video/still ke git.** GitHub batas 100MB/file & histori git membengkak permanen. Git = teks + character sheet. Drive/disk = media.
 
 ---
 
 ## ▶️ LANGKAH BERIKUTNYA (urut)
-1. Pastikan `mcp__Higgs__*` aktif (cek `mcp__Higgs__balance`).
-2. **Review 9 shot CHAR batch 1** (`VT-001-renders.md`) — cek konsistensi karakter/palet/glow. Regenerate yang meleset.
-3. **Generate sisa still VT-001:** 36 NEW + 3 TPL, ikuti `VT-001-shotlist.md` (master prompt + reference sheet char-*-master.png yang sudah terkunci). Terapkan tanda REUSE untuk hemat kredit.
-4. Update `workplan.md` tiap batch selesai.
-5. **Motion:** image-to-video per still, gerak minimal (denyut/partikel/cairan), klip 5 dtk.
-6. **Narasi:** verifikasi angka klinis dulu (lihat Catatan Produksi di naskah) → generate voice terkunci.
-7. **Rakit + subtitle EN/ID + desain audio** (pulse-ox pitch = elemen kunci) → **upload** (centang disclosure "altered/synthetic content") → potong 2–3 **Shorts**.
+
+**SEDANG BERJALAN — amankan aset (user, manual):**
+1. Download 104 file dari gallery Higgsfield.
+2. Rename pakai **`references/VT-001-rename-map.md`** (job ID → nama final). ⚠️ Jangan rename manual tanpa peta ini — nama file Higgsfield acak dan mudah tertukar.
+3. Upload ke Drive **V1 1/8/26** → `stills/` · `clips/` · `vo/`.
+4. Ambil 3 character sheet dari repo (`.claude/skills/ytanestesi/references/char-*-master.png`) → taruh di `stills/`.
+5. Kabari Claude → Claude **audit isi Drive** (punya akses baca) untuk memastikan 104 file lengkap & namanya benar.
+
+**Setelah aset aman:**
+6. **Rakit di CapCut** ikuti `references/VT-001-assembly.md` (narasi dulu, gambar belakangan; peta VO→shot; teks overlay; desain audio pulse-ox).
+7. **Subtitle EN** (salin dari naskah) **+ ID** (terjemahan).
+8. **Thumbnail:** generate di Gemini pakai prompt di `references/VT-001-packaging.md` bagian 4.
+9. **Upload** pakai judul/deskripsi/tag di `VT-001-packaging.md` → ⚠️ **centang disclosure "altered or synthetic content"** (WAJIB).
+10. Potong **2–3 Shorts** (kandidat ada di assembly guide bagian 8).
+
+**Setelah VT-001 tayang:**
+11. Pindah ke **environment dgn network policy longgar** (solusi #1 di blokir jaringan) supaya episode berikutnya tidak kena hambatan yang sama.
+12. **VT-002 (Cardiac arrest)** — semua aset gaya & voice sudah terkunci, jadi jauh lebih cepat. Naskah bisa ditulis kapan saja tanpa kredit.
 
 ---
 
